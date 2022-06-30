@@ -10,6 +10,8 @@ body {
 nav {
     background-color: rgb(124, 93, 115);
     text-align: right;
+    position: fixed;
+    width: 98.75%;
 }
 
 nav ul {
@@ -24,9 +26,16 @@ nav ul a {
     font-size: 1.5em;
 }
 
-header {
+#welcome-section {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#welcome-text {
     text-align: center;
-    padding-top: 7em;
+    margin: 0;
+    padding: 40vh 0 0 0;
 }
 
 h1 {
@@ -50,7 +59,7 @@ p {
 
 main {
     padding: 1em 0.2em;
-    margin-top: 7em;
+
     text-align: center;
     background-color: rgb(44, 99, 99);
 }
@@ -61,16 +70,38 @@ section {
     justify-content: center;
 }
 
-#tile {
+.project-tile {
     background-color: gray;
     width: 20%;
     height: 14em;
     margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+#product-text {
+    margin: 3em 1em;
+    padding: .5em;
+    background-color: rgba(68, 68, 88, 0.808);
+    border-radius: .5em;
+}
+
+#product-link, #profile-link {
+    color: white;
+    text-decoration: none;
 }
 
 #contact-info {
     text-align: center;
     padding: 2em 0;
+}
+
+#balance-sheet {
+    background-image: url(balance-sheet.png);
+    background-size: cover;
+    background-position: center;
 }
 
 #contact-tile {
@@ -91,6 +122,10 @@ footer {
     height: .5em;
 }
 
+strong {
+    font-size: 1.5em;
+}
+
 #copyright {
     margin: 2em;
     font-size: 1.25em;
@@ -100,12 +135,16 @@ footer {
 @media (max-width: 900px) {
     nav {
         text-align: center;
+        width: 98%;
+    }
+    nav ul {
+        padding: 0;
     }
     nav ul a{
         display: block;
         margin: 0;
     }
-    #tile {
+    .project-tile {
         width: 40%;
     }
 }
@@ -113,12 +152,13 @@ footer {
 @media (max-width: 700px) {
     nav {
         text-align: center;
+        width: 97%;
     }
     nav ul a{
         display: block;
         margin: 0;
     }
-    #tile {
+    .project-tile {
         width: 60%;
     }
 }
