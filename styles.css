@@ -1,0 +1,124 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(68, 68, 88);
+    color: white;
+}
+
+nav {
+    background-color: rgb(124, 93, 115);
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 1em;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10%;
+    font-size: 1.5em;
+}
+
+header {
+    text-align: center;
+    padding-top: 7em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+#name {
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: rgb(59, 134, 134);
+    text-underline-offset: .1em;
+}
+
+p {
+    margin: .5em;
+    font-size: 1.25em;
+    color: rgb(161, 122, 150);
+    font-style: italic;
+}
+
+main {
+    padding: 1em 0.2em;
+    margin-top: 7em;
+    text-align: center;
+    background-color: rgb(44, 99, 99);
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#tile {
+    background-color: gray;
+    width: 20%;
+    height: 14em;
+    margin: 1em;
+}
+
+#contact-info {
+    text-align: center;
+    padding: 2em 0;
+}
+
+#contact-tile {
+    width: 20%;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+footer {
+    margin: 1em 0 2em 0;
+}
+
+#line {
+    background-color: rgb(161, 122, 150);
+    height: .5em;
+}
+
+#copyright {
+    margin: 2em;
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+@media (max-width: 900px) {
+    nav {
+        text-align: center;
+    }
+    nav ul a{
+        display: block;
+        margin: 0;
+    }
+    #tile {
+        width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        text-align: center;
+    }
+    nav ul a{
+        display: block;
+        margin: 0;
+    }
+    #tile {
+        width: 60%;
+    }
+}
